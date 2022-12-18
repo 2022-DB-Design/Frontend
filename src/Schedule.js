@@ -1,6 +1,7 @@
 function Schedule() {
     return (  
         <>
+        시간표
         </>
     );
 }
