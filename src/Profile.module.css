@@ -1,0 +1,19 @@
+.App{
+    display: flex;
+    height:100%;
+}
+
+.container{
+    flex:1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    text-align: center;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+.con{
+    flex:1;
+}
