@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.contents {
+    flex: 9;
+    margin: 10px;
+    background-color: aliceblue;
+    border-top: 3px solid #999999;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px dashed #999999;
+    margin: 20px;
+}
+
+.row:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #999999;
+}
+
+.date {
+    flex: 1;
+}
+
+.title {
+    flex: 5;
+    text-align: left;
+    border-left: 1px dashed #999999;
+    border-right: 1px dashed #999999;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.name {
+    flex: 1;
+}
+
+.select {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.button {
+    cursor: pointer;
+    line-height: 200px;
+    font-size: 1.5em;
+    color: #999999;
+    font-weight: bold;
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.selectedButton {
+    line-height: 200px;
+    font-size: 2em;
+    font-weight: bold;
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}

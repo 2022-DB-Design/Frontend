@@ -11,12 +11,18 @@ function App() {
       <div className={styles.title}>Campuspal</div>
       <div className={styles.container}>
         <div className={styles.select}>
-          <div className={styles.button} onClick={() => setSelector(1)}>프로필</div>
-          <div className={styles.button} onClick={() => setSelector(2)}>게시판</div>
-          <div className={styles.button} onClick={() => setSelector(3)}>시간표</div>
+          {selector === 1 ?
+            <div className={styles.selectedButton} onClick={() => setSelector(1)}>프로필</div> :
+            <div className={styles.button} onClick={() => setSelector(1)}>프로필</div>}
+          {selector === 2 ?
+            <div className={styles.selectedButton} onClick={() => setSelector(2)}>게시판</div> :
+            <div className={styles.button} onClick={() => setSelector(2)}>게시판</div>}
+          {selector === 3 ?
+            <div className={styles.selectedButton} onClick={() => setSelector(3)}>시간표</div> :
+            <div className={styles.button} onClick={() => setSelector(3)}>시간표</div>}
         </div>
         <div className={styles.contents}>
-          {selector === 1? <Profile />: selector === 2? <Board />: <Schedule />}
+          {selector === 1 ? <Profile /> : selector === 2 ? <Board /> : <Schedule />}
         </div>
       </div>
     </div>

@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    border-bottom: 1px solid #999999;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.day {
+    flex: 1;
+}
+
+.subjects {
+    display: flex;
+    flex-direction: row;
+}
+
+.mon {
+    flex: 1;
+}
+
+.subjects {
+    font-size: 1.4em;
+}
